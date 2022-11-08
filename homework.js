@@ -92,10 +92,8 @@ function selectionSort(unsortedArray) {
 
 function textList(textArray) {
   let newString = "";
-  while (textArray.length > 0) {
-    for (let item of textArray) {
-      newString = textArray[0];
-    }
-  }
+  // while (textArray.length > 0) {
+  //   newString = minimum(textArray);
+  // }
   return newString;
 }
