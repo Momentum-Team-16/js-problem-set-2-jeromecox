@@ -72,10 +72,11 @@ function minimum(numArray) {
 //
 function selectionSort(unsortedArray) {
   let sortedArray = [];
-  if (unsortedArray.length > 0) {
-    let unsortedCopy = unsortedArray.slice(0);
+  let unsortedCopy = unsortedArray.slice(0);
+  while (unsortedCopy.length > 0) {
     let min = minimum(unsortedCopy);
     sortedArray.push(min);
+    unsortedCopy = remove(unsortedCopy, min);
   }
   return sortedArray;
 }
@@ -88,3 +89,13 @@ function selectionSort(unsortedArray) {
 //
 // For example, `textList(['Cadence', 'Ordel', 'Marion'])` results in the string
 // `"Cadence,Ordel,Marion"`.
+
+function textList(textArray) {
+  let newString = "";
+  while (textArray.length > 0) {
+    for (let item of textArray) {
+      newString = textArray[0];
+    }
+  }
+  return newString;
+}
