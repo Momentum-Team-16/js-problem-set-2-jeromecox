@@ -92,8 +92,6 @@ function selectionSort(unsortedArray) {
 
 function textList(textArray) {
   let newString = "";
-  // while (textArray.length > 0) {
-  //   newString = minimum(textArray);
-  // }
+  newString = textArray.toString();
   return newString;
 }
