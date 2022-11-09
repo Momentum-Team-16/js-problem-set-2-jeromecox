@@ -95,3 +95,4 @@ function textList(textArray) {
   newString = textArray.toString();
   return newString;
 }
+// could also just have 'return list.toString()' in the function
